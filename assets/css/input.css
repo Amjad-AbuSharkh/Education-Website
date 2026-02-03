@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+@theme {
+    --main-font: "Lora", serif;
+    --main-color: #cbb58b;
+}
+
+body {
+    font-family: var(--main-font);
+}

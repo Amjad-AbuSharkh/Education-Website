@@ -9,70 +9,109 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="carousel w-full relative">
+    <header class="header h-screen bg-[url(../image/hero/slider.webp)] bg-no-repeat bg-auto">
+        <nav class="hidden  md:flex justify-center items-center w-full text-white font-medium gap-5 px-5 py-5 text-xl">
+            <a href="#" class="hover:text-[#cbb58b]">About</a>
+            <a href="#" class="hover:text-[#cbb58b]">Admissions</a>
+            <a href="#" class="hover:text-[#cbb58b]">Academics</a>
+            <div class="logo cursor-pointer">
+                <img src="./assets/image/public/logo.webp" alt="logo">
+            </div>
+            <a href="#" class="hover:text-[#cbb58b]">Research</a>
+            <a href="#" class="hover:text-[#cbb58b]">Pages</a>
+            <a href="#" class="hover:text-[#cbb58b]">Contact</a>
+        </nav>
+        <div class="container mx-auto flex md:hidden items-center justify-between px-5 py-5">
+            <img src="./assets/image/public/logo.webp" alt="logo" class="w-31.75 h-30.5">
+            <div class="icons border border-solid border-[#cbb58b] w-12.5 h-9.5 cursor-pointer roun
+            ded-md flex justify-center items-center">
+                <i class="fa-solid fa-align-justify fa-2xl" style="color: #cbb58b;"></i>
+            </div>
+        </div>
+        <div class="content  flex flex-col justify-center items-center gap-8 px-8 py-8 text-white font-medium text-center">
+            <h1 class="text-[54px]">Creative Thinking & Innovation</h1>
+            <p class="text-[20px] text-center">Proactively utilize open-source users for process-centric total linkage.<br>
+                Energistically reinvent web-enabled initiatives with premium<br>
+                processes. Proactively drive.</p>
+            <div class="hidden sm:flex gap-7">
+                <button class="cursor-pointer px-9 py-4 text-[18px] uppercase border-2 border-solid border-[#cbb58b] text-[#cbb58b] hover:text-white hover:bg-[#cbb58b]">see programs</button>
+                <button class="cursor-pointer px-9 py-4 text-[18px] uppercase border-2 border-solid border-[#cbb58b] text-[#cbb58b] hover:bg-[#cbb58b] hover:text-white">learn more</button>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="carousel w-full relative">
         <div id="slide1" class="carousel-item relative w-full">
             <img src="./assets/image/hero/slider.webp" class="w-full" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide3"
-                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65">❮</a>
+                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65 hover:text-white hover:border-white">❮</a>
                 <a href="#slide2"
-                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65">❯</a>
+                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65 hover:text-white hover:border-white">❯</a>
+            </div>
+            <div class="minue block md:hidden">
+                <i class="fa-solid fa-align-justify"></i>
             </div>
             <div
-                class="navbar absolute flex justify-center items-center w-full text-white font-medium gap-5 py-5 text-xl">
-                <div class="left-side flex gap-4">
-                    <a href="#">About</a>
-                    <a href="#">Admissions</a>
-                    <a href="#">Academics</a>
-                </div>
-                <div class="logo">
-                    <img src="./assets/image/public/logo.webp" alt="logo">
-                </div>
-                <div class="right-side flex gap-4">
-                    <a href="#">Research</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Pages</a>
-                </div>
-            </div>
-            <!-- <div
-                class="content absolute  h-full w-full text-white text-3xl flex flex-col justify-center items-center text-center gap-5">
-                <h1>Creative Thinking & Innovation</h1>
-                <p>Proactively utilize open-source users for process-centric total linkage. <br>
+                class="content absolute top-[40%] left-[27%] text-white  flex flex-col justify-center items-center text-center gap-5">
+                <h1 class="text-[54px] font-bold">Creative Thinking & Innovation</h1>
+                <p class="text-[20px]">Proactively utilize open-source users for process-centric total linkage. <br>
                     Energistically reinvent web-enabled initiatives with premium <br>
                     processes. Proactively drive</p>
-                <div class="demo">
-                    <button class="uppercase">see programs</button>
-                    <button class="uppercase">learn more</button>
+                <div class="slide-btn text-[18px] flex gap-5">
+                    <button
+                        class="uppercase border-[3px] border-solid border-[#cbb58b] py-4 px-9 text-[#cbb58b] leading-[1\.25] cursor-pointer hover:bg-[#cbb58b] hover:text-white">see
+                        programs</button>
+                    <button
+                        class="uppercase border-[3px] border-solid border-[#cbb58b] py-4 px-9 text-[#cbb58b] leading-[1\.25] cursor-pointer hover:bg-[#cbb58b] hover:text-white">learn
+                        more</button>
                 </div>
-            </div> -->
+            </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
             <img src="./assets/image/hero/slider-2.webp" class="w-full" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide1"
-                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65">❮</a>
+                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65 hover:text-white hover:border-white">❮</a>
                 <a href="#slide3"
-                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65">❯</a>
+                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65 hover:text-white hover:border-white">❯</a>
+            </div>
+            <div
+                class="content absolute top-[40%] left-[30%] text-white  flex flex-col justify-center items-center text-center gap-5">
+                <h1 class="text-[54px] font-bold">We foster wisdom</h1>
+                <p class="text-[20px]">Proactively utilize open-source users for process-centric total linkage. <br>
+                    Energistically reinvent web-enabled initiatives with premium <br>
+                    processes. Proactively drive</p>
+                <div class="slide-btn text-[18px] flex gap-5">
+                    <button
+                        class="uppercase border-[3px] border-solid border-[#cbb58b] py-4 px-9 text-[#cbb58b] leading-[1.25] cursor-pointer hover:bg-[#cbb58b] hover:text-white">see
+                        programs</button>
+                    <button
+                        class="uppercase border-[3px] border-solid border-[#cbb58b] py-4 px-9 text-[#cbb58b] leading-[1.25] cursor-pointer hover:bg-[#cbb58b] hover:text-white">learn
+                        more</button>
+                </div>
             </div>
             <div
                 class="navbar absolute flex justify-center items-center w-full text-white font-medium gap-5 py-5 text-xl">
                 <div class="left-side flex gap-4">
-                    <a href="#">About</a>
-                    <a href="#">Admissions</a>
-                    <a href="#">Academics</a>
+                    <a href="#" class="hover:text-[#cbb58b]">About</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Admissions</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Academics</a>
                 </div>
                 <div class="logo">
                     <img src="./assets/image/public/logo.webp" alt="logo">
                 </div>
                 <div class="right-side flex gap-4">
-                    <a href="#">Research</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Pages</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Research</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Pages</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Contact</a>
                 </div>
             </div>
         </div>
@@ -80,27 +119,39 @@
             <img src="./assets/image/hero/slider-3.webp" class="w-full" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide2"
-                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65">❮</a>
+                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65 hover:text-white hover:border-white">❮</a>
                 <a href="#slide1"
-                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65">❯</a>
+                    class="py-3 px-6 rounded-none text-3xl border-2 border-white/40 border-solid text-white/65 hover:text-white hover:border-white">❯</a>
+            </div>
+            <div
+                class="content absolute top-[40%] left-[30%] text-white  flex flex-col justify-center items-center text-center gap-5">
+                <h1 class="text-[54px] font-bold">Campus life @ Unisco</h1>
+                <p class="text-[20px]">Proactively utilize open-source users for process-centric total linkage. <br>
+                    Energistically reinvent web-enabled initiatives with premium <br>
+                    processes. Proactively drive</p>
+                <div class="slide-btn text-[18px] flex gap-5">
+                    <button
+                        class="uppercase border-[3px] border-solid border-[#cbb58b] py-4 px-9 text-[#cbb58b] leading-[1.25] cursor-pointer hover:bg-[#cbb58b] hover:text-white">Campus
+                        life</button>
+                </div>
             </div>
             <div
                 class="navbar absolute flex justify-center items-center w-full text-white font-medium gap-5 py-5 text-xl">
                 <div class="left-side flex gap-4">
-                    <a href="#">About</a>
-                    <a href="#">Admissions</a>
-                    <a href="#">Academics</a>
+                    <a href="#" class="hover:text-[#cbb58b]">About</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Admissions</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Academics</a>
                 </div>
                 <div class="logo">
                     <img src="./assets/image/public/logo.webp" alt="logo">
                 </div>
                 <div class="right-side flex gap-4">
-                    <a href="#">Research</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Pages</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Research</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Pages</a>
+                    <a href="#" class="hover:text-[#cbb58b]">Contact</a>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </body>
 

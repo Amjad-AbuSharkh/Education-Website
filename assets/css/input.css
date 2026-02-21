@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@plugin "daisyui";
 
 
 
@@ -10,11 +9,4 @@
 
 body {
     font-family: var(--main-font);
-}
-.our-products .product {
-    cursor: pointer;
-}
-.our-products .product:hover .img img {
-    background-color: #cbb58b;
-    
 }

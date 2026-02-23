@@ -19,21 +19,21 @@
 <body>
     <header class="header h-screen bg-[url(../image/hero/slider.webp)] bg-no-repeat bg-auto">
         <nav class="hidden  md:flex justify-center items-center w-full text-white font-medium gap-5 px-5 py-5 text-xl">
-            <a href="#" class="hover:text-[#cbb58b]">About</a>
-            <a href="#" class="hover:text-[#cbb58b]">Admissions</a>
-            <a href="#" class="hover:text-[#cbb58b]">Academics</a>
+            <a href="#" class="hover:text-(--main-color)">About</a>
+            <a href="#" class="hover:text-(--main-color)">Admissions</a>
+            <a href="#" class="hover:text-(--main-color)">Academics</a>
             <div class="logo cursor-pointer">
                 <img src="./assets/image/public/logo.webp" alt="logo">
             </div>
-            <a href="#" class="hover:text-[#cbb58b]">Research</a>
-            <a href="#" class="hover:text-[#cbb58b]">Pages</a>
-            <a href="#" class="hover:text-[#cbb58b]">Contact</a>
+            <a href="#" class="hover:text-(--main-color)">Research</a>
+            <a href="#" class="hover:text-(--main-color)">Pages</a>
+            <a href="#" class="hover:text-(--main-color)">Contact</a>
         </nav>
         <div class="container mx-auto flex md:hidden items-center justify-between px-5 py-5">
             <img src="./assets/image/public/logo.webp" alt="logo" class="w-31.75 h-30.5">
-            <div class="icons border border-solid border-[#cbb58b] w-12.5 h-9.5 cursor-pointer roun
+            <div class="icons border border-solid border-(--main-color) w-12.5 h-9.5 cursor-pointer roun
             ded-md flex justify-center items-center">
-                <i class="fa-solid fa-align-justify fa-2xl" style="color: #cbb58b;"></i>
+                <i class="fa-solid fa-align-justify fa-2xl text-(--main-color)"></i>
             </div>
         </div>
         <div
@@ -45,10 +45,10 @@
                 processes. Proactively drive.</p>
             <div class="hidden sm:flex gap-7">
                 <button
-                    class="cursor-pointer px-9 py-4 text-[18px] uppercase border-2 border-solid border-[#cbb58b] text-[#cbb58b] hover:text-white hover:bg-[#cbb58b]">see
+                    class="cursor-pointer px-9 py-4 text-[18px] uppercase border-2 border-solid border-(--main-color) text-(--main-color) hover:text-white hover:bg-(--main-color)">see
                     programs</button>
                 <button
-                    class="cursor-pointer px-9 py-4 text-[18px] uppercase border-2 border-solid border-[#cbb58b] text-[#cbb58b] hover:bg-[#cbb58b] hover:text-white">learn
+                    class="cursor-pointer px-9 py-4 text-[18px] uppercase border-2 border-solid border-(--main-color) text-(--main-color) hover:bg-(--main-color) hover:text-white">learn
                     more</button>
             </div>
         </div>
@@ -66,44 +66,57 @@
                 <img src="./assets/image/public/welcom_sign.webp" alt="welcom_sign" class="max-w-full">
             </div>
         </section>
-        <section class="our-products bg-[#f2f2f2]">
+        <section class="our-products bg-[#f2f2f2] px-5 md:px-0">
             <div class="container mx-auto">
-                <h3 class="capitalize text-4xl font-bold md:my-5">our courses</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-                    <div class="product  border border-solid border-white bg-white rounded-2xl">
-                        <img src="./assets/image/Our Courses/courses_1.webp" alt="courses_1" class="">
-                        <div class="content my-2 w-full py-4 px-3.5 ">
+                <h3 class="capitalize text-4xl font-bold py-2.5">our courses</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5">
+                    <div class="product border border-solid border-white rounded-2xl bg-white shadow-md">
+                        <div class="img">
+                            <img src="./assets/image/Our Courses/courses_1.webp" alt="courses_1"
+                                class="w-full h-56 object-cover">
+                        </div>
+                        <div class="content text-center md:text-left my-2 w-full py-4 px-3.5">
                             <h4 class="text-2xl font-semibold">Biochemistry</h4>
                             <p class="text-[17px]">When an unknown printer <br> took a galley...</p>
                         </div>
                     </div>
-                    <div class="product border border-solid border-white bg-white rounded-2xl">
-                        <img src="./assets/image/Our Courses/courses_2.webp" alt="courses_2" class="">
-                        <div class="content my-2 w-full py-4 px-3.5 ">
+
+                    <div class="product border border-solid border-white rounded-2xl bg-white shadow-md">
+                        <div class="img">
+                            <img src="./assets/image/Our Courses/courses_2.webp" alt="courses_2"
+                                class="w-full h-56 object-cover">
+                        </div>
+                        <div class="content text-center md:text-left my-2 w-full py-4 px-3.5 ">
                             <h4 class="text-2xl font-semibold">History</h4>
                             <p class="text-[17px]">When an unknown printer <br> took a galley...</p>
                         </div>
                     </div>
-                    <div class="product border border-solid border-white bg-white rounded-2xl">
-                        <img src="./assets/image/Our Courses/courses_3.webp" alt="courses_3" class="">
-                        <div class="content my-2 w-full py-4 px-3.5 ">
+                    <div class="product border border-solid border-white rounded-2xl bg-white shadow-md">
+                        <div class="img">
+                            <img src="./assets/image/Our Courses/courses_3.webp" alt="courses_3"
+                                class="w-full h-56 object-cover">
+                        </div>
+                        <div class="content text-center md:text-left my-2 w-full py-4 px-3.5 ">
                             <h4 class="text-2xl font-semibold">Human Sciences</h4>
                             <p class="text-[17px]">When an unknown printer <br> took a galley...</p>
                         </div>
                     </div>
-                    <div class="product border border-solid border-white bg-white rounded-2xl">
-                        <img src="./assets/image/Our Courses/courses_4.webp" alt="courses_4" class="">
-                        <div class="content my-2 w-full py-4 px-3.5 ">
+                    <div class="product border border-solid border-white rounded-2xl bg-white shadow-md ">
+                        <div class="img">
+                            <img src="./assets/image/Our Courses/courses_4.webp" alt="courses_4"
+                                class="w-full h-56 object-cover">
+                        </div>
+                        <div class="content text-center md:text-left my-2 w-full py-4 px-3.5 ">
                             <h4 class="text-2xl font-semibold">Earth Sciences</h4>
                             <p class="text-[17px]">When an unknown printer <br> took a galley...</p>
                         </div>
                     </div>
                 </div>
-                <div class="text-center py-14">
-                    <a href="#"
-                        class="py-4 px-9 text-[#cbb58b] border-[3px] border-solid border-[#cbb58b] text-[15px] font-bold uppercase hover:bg-[#cbb58b] hover:text-white">View
-                        all courses</a>
-                </div>
+            </div>
+            <div class="text-center py-14">
+                <a href="#"
+                    class="py-4 px-9 text-[#cbb58b] border-[3px] border-solid border-[#cbb58b] text-[15px] font-bold uppercase hover:bg-[#cbb58b] hover:text-white">View
+                    all courses</a>
             </div>
         </section>
     </main>

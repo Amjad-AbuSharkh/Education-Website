@@ -3,10 +3,18 @@
 
 
 @theme {
-    --main-font: "Lora", serif;
+    --font-lora: "Lora", serif;
     --main-color: #cbb58b;
 }
 
-body {
-    font-family: var(--main-font);
+@layer base {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;  
+    }
+    body {
+    font-family: "Lora", serif;
+    }
+
 }

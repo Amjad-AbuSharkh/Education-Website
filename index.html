@@ -123,61 +123,102 @@
             <div class="container mx-auto flex flex-col">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="upcoming-events">
-                    <h2 class="capitalize text-4xl font-semibold py-5">upcoming events</h2>
-                    <div class="img relative">
-                        <span
-                            class=" hidden md:block text-[13px] px-2 py-3 text-white capitalize absolute top-8 left-12 cursor-pointer bg-(--main-color)">06-nov-17
-                        </span>
-                        <img src="./assets/image/Upcoming Events/upcoming-event-img.webp" alt="upcoming-event-img"
-                            class="max-w-full">
-                        <div class="content absolute bottom-10 left-13.75">
-                            <h3
-                                class="capitalize text-white text-2xl font-medium after:content-[''] after:block after:bg-white after:w-5.25 after:h-0.5">
-                                event heading
-                            </h3>
-                            <p class="text-[#e3e3e3] text-[17px]">Lorem Ipsum is simply dummy text of the printing
-                                and<br>typesetting industry. Lorem Ipsum
-                                has
-                                been the ...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="important dates">
-                    <h2 class="capitalize text-4xl font-semibold py-5">important dates</h2>
-                    <div class="content flex gap-5 w-full mb-5">
-                        <div class="left-side bg-[#665c7c] flex px-1 py-1 h-[84px]">
-                            <div
-                                class="date flex justify-center items-center flex-col px-2.5 border border-dashed border-[#8d84a0] text-white">
-                                <span class="font-semibold text-[23px]">06</span>
-                                <span class="text-[14px] font-semibold capitalize">oct.17</span>
+                        <h2 class="capitalize text-4xl font-semibold py-5">upcoming events</h2>
+                        <div class="img relative">
+                            <span
+                                class=" hidden md:block text-[13px] px-2 py-3 text-white capitalize absolute top-8 left-12 cursor-pointer bg-(--main-color)">06-nov-17
+                            </span>
+                            <img src="./assets/image/Upcoming Events/upcoming-event-img.webp" alt="upcoming-event-img"
+                                class="max-w-full">
+                            <div class="content absolute bottom-10 left-13.75">
+                                <h3
+                                    class="capitalize text-white text-2xl font-medium after:content-[''] after:block after:bg-white after:w-5.25 after:h-0.5">
+                                    event heading
+                                </h3>
+                                <p class="text-[#e3e3e3] text-[17px]">Lorem Ipsum is simply dummy text of the printing
+                                    and<br>typesetting industry. Lorem Ipsum
+                                    has
+                                    been the ...</p>
                             </div>
                         </div>
-                        <div class="right-side">
-                            <h3 class="text-[24px] font-semibold mb-6">Eestibulum sodales metus.</h3>
-                            <p class="text-[17px] mb-4">When an unknown printer took a galley of type
-                                and<br>scrambled it
-                                to make a type specimen book ...</p>
-                        </div>
                     </div>
-                    <hr class="mb-10">
-                    <div class="content flex gap-5 w-full">
-                        <div class="left-side bg-[#665c7c] flex px-1 py-1 h-[84px]">
-                            <div
-                                class="date flex justify-center items-center flex-col px-2.5 border border-dashed border-[#8d84a0] text-white">
-                                <span class="font-semibold text-[23px]">06</span>
-                                <span class="text-[14px] font-semibold capitalize">oct.17</span>
+                    <div class="important dates">
+                        <h2 class="capitalize text-4xl font-semibold py-5">important dates</h2>
+                        <div class="content flex gap-5 w-full mb-5">
+                            <div class="left-side bg-[#665c7c] flex px-1 py-1 h-[84px]">
+                                <div
+                                    class="date flex justify-center items-center flex-col px-2.5 border border-dashed border-[#8d84a0] text-white">
+                                    <span class="font-semibold text-[23px]">06</span>
+                                    <span class="text-[14px] font-semibold capitalize">oct.17</span>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <h3 class="text-[24px] font-semibold mb-6">Eestibulum sodales metus.</h3>
+                                <p class="text-[17px] mb-4">When an unknown printer took a galley of type
+                                    and<br>scrambled it
+                                    to make a type specimen book ...</p>
                             </div>
                         </div>
-                        <div class="right-side">
-                            <h3 class="text-[24px] font-semibold mb-6">Eestibulum sodales metus.</h3>
-                            <p class="text-[17px] mb-4">When an unknown printer took a galley of type
-                                and<br>scrambled it
-                                to make a type specimen book ...</p>
+                        <hr class="mb-10">
+                        <div class="content flex gap-5 w-full">
+                            <div class="left-side bg-[#665c7c] flex px-1 py-1 h-[84px]">
+                                <div
+                                    class="date flex justify-center items-center flex-col px-2.5 border border-dashed border-[#8d84a0] text-white">
+                                    <span class="font-semibold text-[23px]">06</span>
+                                    <span class="text-[14px] font-semibold capitalize">oct.17</span>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <h3 class="text-[24px] font-semibold mb-6">Eestibulum sodales metus.</h3>
+                                <p class="text-[17px] mb-4">When an unknown printer took a galley of type
+                                    and<br>scrambled it
+                                    to make a type specimen book ...</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
+        </section>
+        <section class="chart py-24 my-5 bg-[url(../image/chart_bg.webp)] border bg-no-repeat bg-cover bg-center">
+                <div class="container mx-auto flex justify-between">
+                    <!--كيف اجمع بين grid وال flex عشان تقسيمة الصفحة-->
+                    <div class="icons text-center sm:flex gap-2.5 items-center">
+                        <div class="img">
+                            <img src="./assets/image/chart-icon_1.png" alt=" Teachers" class="img-full">
+                        </div>
+                        <div class="content md:text-[23px] text-white flex flex-col">
+                            <span class="md:text-[40px]">39</span>
+                            Teachers
+                        </div>
+                    </div>
+                    <div class="icons text-center sm:flex gap-2.5 items-center">
+                        <div class="img">
+                            <img src="./assets/image/chart-icon_2.png" alt="Students" class="img-full">
+                        </div>
+                        <div class="content md:text-[23px] text-white flex flex-col">
+                            <span class="md:text-[40px]">2600</span>
+                            Students
+                        </div>
+                    </div>
+                    <div class="icons text-center sm:flex gap-2.5 items-center">
+                        <div class="img">
+                            <img src="./assets/image/chart-icon_3.png" alt="Courses" class="img-full">
+                        </div>
+                        <div class="content md:text-[23px] text-white flex flex-col">
+                            <span class="md:text-[40px]">56</span>
+                            Courses
+                        </div>
+                    </div>
+                    <div class="icons text-center sm:flex gap-2.5 items-center">
+                        <div class="img">
+                            <img src="./assets/image/chart-icon_4.png" alt="Years Exp." class="img-full">
+                        </div>
+                        <div class="content md:text-[23px] text-white flex flex-col">
+                            <span class="md:text-[40px]">13</span>
+                            Years Exp.
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
 </body>

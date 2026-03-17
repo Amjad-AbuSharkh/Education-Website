@@ -15,6 +15,8 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -212,6 +214,12 @@
       max-width: 96rem;
     }
   }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
+  }
+  .mx-10 {
+    margin-inline: calc(var(--spacing) * 10);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -221,11 +229,14 @@
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
-  }
-  .mb-3 {
-    margin-bottom: calc(var(--spacing) * 3);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -238,9 +249,6 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
-  }
-  .mb-28 {
-    margin-bottom: calc(var(--spacing) * 28);
   }
   .flex {
     display: flex;
@@ -269,11 +277,11 @@
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
-  .h-\[8\] {
-    height: 8;
-  }
   .h-\[84px\] {
     height: 84px;
+  }
+  .h-full {
+    height: 100%;
   }
   .h-screen {
     height: 100vh;
@@ -319,6 +327,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -382,14 +393,41 @@
   .bg-\[\#f2f2f2\] {
     background-color: #f2f2f2;
   }
+  .bg-\[url\] {
+    background-color: url;
+  }
+  .bg-\[utl\] {
+    background-color: utl;
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\.\.\/image\/\)\] {
+    background-image: url(../image/);
+  }
+  .bg-\[url\(\.\.\/image\/chart\)\] {
+    background-image: url(../image/chart);
+  }
+  .bg-\[url\(\.\.\/image\/chart_bg\.web\)\] {
+    background-image: url(../image/chart_bg.web);
+  }
+  .bg-\[url\(\.\.\/image\/chart_bg\.webp\)\] {
+    background-image: url(../image/chart_bg.webp);
   }
   .bg-\[url\(\.\.\/image\/hero\/slider\.webp\)\] {
     background-image: url(../image/hero/slider.webp);
   }
   .bg-auto {
     background-size: auto;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -415,11 +453,17 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
+  }
+  .px-24 {
+    padding-inline: calc(var(--spacing) * 24);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -445,6 +489,9 @@
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
   }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
   .text-center {
     text-align: center;
   }
@@ -455,6 +502,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -483,6 +534,9 @@
   }
   .text-\[24px\] {
     font-size: 24px;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
   }
   .text-\[54px\] {
     font-size: 54px;
@@ -630,11 +684,6 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
-  .md\:grid-cols-6 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-  }
   .md\:gap-5 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 5);
@@ -648,6 +697,21 @@
   .md\:text-left {
     @media (width >= 48rem) {
       text-align: left;
+    }
+  }
+  .md\:text-\[23px\] {
+    @media (width >= 48rem) {
+      font-size: 23px;
+    }
+  }
+  .md\:text-\[40px\] {
+    @media (width >= 48rem) {
+      font-size: 40px;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
     }
   }
   .lg\:grid-cols-4 {
